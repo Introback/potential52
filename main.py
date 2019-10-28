@@ -1,8 +1,7 @@
 import telebot
 import pyowm
-
-owm = pyowm.OWM('6d00d1d4e704068d70191bad2673e0cc', language = "ru")
 bot = telebot.TeleBot("775213554:AAE9878G2LmaEMoSavhy9J_ZE_oB0aK1SJw")
+owm = pyowm.OWM('6d00d1d4e704068d70191bad2673e0cc', language = "ru")
 
 @bot.message_handler(content_types=['text'])
 def send_echo(message):
